@@ -77,7 +77,7 @@ const CalculatorCard = () => {
   }, [unit, heightCm, weightKg, feet, inches, stones, pounds, calculateBMI]) // Recalculate BMI when any input changes
 
   return (
-    <div className="flex flex-col gap-6 rounded-2xl p-6 shadow-[16px_32px_56px_0_rgba(143,174,207,0.25)] sm:gap-8 lg:max-w-[32.25rem]">
+    <div className="flex flex-col gap-6 rounded-2xl bg-white p-6 shadow-[16px_32px_56px_0_rgba(143,174,207,0.25)] sm:gap-8 lg:mr-24 lg:max-w-[35rem]">
       <Heading level={2} size="m">
         Enter your details below
       </Heading>

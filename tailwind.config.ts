@@ -23,6 +23,8 @@ const config = {
         gunmetal: "hsl(215, 31%, 21%)",
         "dark-electric-blue": "hsl(215, 17%, 45%)",
         borders: "hsl(200, 24%, 88%)",
+        "light-blue": "hsl(216, 95%, 92%)",
+        "very-light-blue": "hsl(183, 95%, 98%)",
       },
       keyframes: {
         "accordion-down": {

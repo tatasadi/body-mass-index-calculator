@@ -1,28 +1,17 @@
 import Image from "next/image"
-import CalculatorCard from "../components/common/CalculatorCard"
-import Logo from "../public/images/logo.svg"
 import Heading from "../components/common/Typography/Heading"
 import Paragraph from "../components/common/Typography/Paragraph"
 import imageManEating from "../public/images/image-man-eating.webp"
 import CardWithBigIcon from "../components/common/CardWithBigIcon"
 import CardWithSmallIcon from "../components/common/CardWithSmallIcon"
+import HeroSection from "../components/sections/HeroSection"
 
 export default function Home() {
   return (
-    <main className="flex max-w-[90rem] flex-col items-center justify-between">
-      <div className="flex w-full justify-center lg:justify-start">
-        <Image src={Logo} alt="logo" />
-      </div>
-      <Heading level={1} size="xl" className="">
-        Body Mass Index Calculator
-      </Heading>
-      <Paragraph>
-        Better understand your weight in relation to your height using our body
-        mass index (BM) calculator. While BMI is not the sole determinant of a
-        healthy weight, it offers a valuable starting point to evaluate your
-        overall health and well-being.
-      </Paragraph>
-      <CalculatorCard />
+    <main className="relative flex max-w-[90rem] flex-col items-center justify-between">
+      <div className="absolute right-[10.4rem] top-[46.8rem] z-0 h-[12.5rem] w-[5.3125rem] bg-contain bg-no-repeat lg:bg-[url('/images/pattern-curved-line-left.svg')]"></div>
+      <div className="absolute bottom-[20.7rem] left-[10.3rem] z-0 h-[7.625rem] w-[5.875rem] bg-contain bg-no-repeat lg:bg-[url('/images/pattern-curved-line-right.svg')]"></div>
+      <HeroSection />
       <Image src={imageManEating} alt="man eating" />
       <Heading level={1} size="l" className="">
         What your BMI result means
