@@ -25,6 +25,8 @@ const config = {
         borders: "hsl(200, 24%, 88%)",
         "light-blue": "hsl(216, 95%, 92%)",
         "very-light-blue": "hsl(183, 95%, 98%)",
+        "light-blue-25": "hsla(216, 95%, 92%, 0.25)",
+        "very-light-blue-25": "hsla(183, 95%, 98%, 0.25)",
       },
       keyframes: {
         "accordion-down": {

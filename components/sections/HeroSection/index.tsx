@@ -12,8 +12,8 @@ const HeroSection = () => {
         <div className="mb-6 flex w-full justify-center sm:mb-10 lg:ml-[6.25rem] lg:mt-[2.625rem] lg:justify-start">
           <Image src={Logo} alt="logo" />
         </div>
-        <div className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2 lg:gap-8">
-          <div className="mb-12 flex flex-col items-center gap-6 text-center sm:mb-10 lg:mb-16 lg:items-start lg:text-left">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8">
+          <div className="mb-12 flex flex-col items-center gap-6 text-center sm:mb-10 lg:mb-16 lg:items-start lg:pl-[6.25rem] lg:pt-[5rem] lg:text-left">
             <Heading level={1} size="xl">
               Body Mass <span className="-mt-6 block">Index Calculator</span>
             </Heading>
