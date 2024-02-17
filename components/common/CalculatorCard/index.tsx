@@ -1,9 +1,10 @@
+"use client"
 import { useState, useEffect, useCallback } from "react"
-import { Label } from "../../common/Label"
-import NumericalTextField from "../../common/NumericalTextField"
-import { RadioGroup, RadioGroupItem } from "../../common/RadioGroup"
-import Heading from "../../common/Typography/Heading"
-import Paragraph from "../../common/Typography/Paragraph"
+import { Label } from "../Label"
+import NumericalTextField from "../NumericalTextField"
+import { RadioGroup, RadioGroupItem } from "../RadioGroup"
+import Heading from "../Typography/Heading"
+import Paragraph from "../Typography/Paragraph"
 
 const CalculatorCard = () => {
   const [unit, setUnit] = useState("metric")

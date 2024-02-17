@@ -3,13 +3,15 @@ import { Meta, StoryFn } from "@storybook/react"
 import { RadioGroup, RadioGroupItem } from "." // Update the import path accordingly
 import { Label } from "../Label"
 
-export default {
+const meta: Meta<typeof RadioGroup> = {
   title: "Components/RadioGroup",
   component: RadioGroup,
   parameters: {
     layout: "centered",
   },
-} as Meta
+}
+
+export default meta
 
 const Template: StoryFn<React.ComponentPropsWithoutRef<typeof RadioGroup>> = (
   args,

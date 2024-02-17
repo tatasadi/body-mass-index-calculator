@@ -1,15 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import NumericalTextField from "."
 
-export default {
+const meta: Meta<typeof NumericalTextField> = {
   title: "Components/NumericalTextField",
   component: NumericalTextField,
   parameters: {
     layout: "centered",
   },
-} as Meta<typeof NumericalTextField>
+}
 
-type Story = StoryObj<typeof NumericalTextField>
+export default meta
+
+type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
