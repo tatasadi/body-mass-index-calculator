@@ -146,21 +146,30 @@ const CalculatorCard = () => {
       )}
 
       <div className="flex flex-col gap-6 rounded-2xl bg-blue p-8 text-white sm:flex-row sm:items-center sm:rounded-r-[12rem]">
-        <div>
-          <Paragraph size="m-bold" className="text-white">
-            Your BMI is...
-          </Paragraph>
-          <Heading level={3} size="xl">
-            {bmi || "N/A"}
-          </Heading>
-          <Paragraph className="text-white">{bmiCategory}</Paragraph>
-        </div>
-        <Paragraph className="ml-auto max-w-[17rem] text-white">
+        {bmi && (
+          <div>
+            <Paragraph size="m-bold" className="text-white">
+              Your BMI is...
+            </Paragraph>
+            <Heading level={3} size="xl">
+              {bmi || "N/A"}
+            </Heading>
+            <Paragraph className="text-white">{bmiCategory}</Paragraph>
+          </div>
+        )}
+        <Paragraph
+          className={` text-white ${bmi ? "ml-auto max-w-[17rem]" : ""}`}
+        >
+          {!bmi && (
+            <Heading level={3} size="s" className="mb-4 text-white">
+              Welcome!
+            </Heading>
+          )}
           {bmiCategory === "Healthy weight"
             ? "You have a healthy weight. "
             : ""}
           {!bmi || Number(bmi) < 0
-            ? "Enter your details to calculate your BMI and ideal weight."
+            ? "Enter your height and weight and you’ll see your BMI result here"
             : idealWeight
               ? `Your ideal weight is between ${idealWeight}.`
               : ""}
