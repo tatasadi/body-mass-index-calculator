@@ -152,7 +152,7 @@ const CalculatorCard = () => {
               Your BMI is...
             </Paragraph>
             <Heading level={3} size="xl">
-              {bmi || "N/A"}
+              {bmi}
             </Heading>
             <Paragraph className="text-white">{bmiCategory}</Paragraph>
           </div>
