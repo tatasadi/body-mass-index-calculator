@@ -112,12 +112,14 @@ const CalculatorCard = () => {
             label="Height"
             value={heightCm}
             onChange={(e) => setHeightCm(e.target.value)}
+            id="heightCm"
           />
           <NumericalTextField
             unit="kg"
             label="Weight"
             value={weightKg}
             onChange={(e) => setWeightKg(e.target.value)}
+            id="weightKg"
           />
         </div>
       ) : (
@@ -127,22 +129,26 @@ const CalculatorCard = () => {
             label="Height"
             value={feet}
             onChange={(e) => setFeet(e.target.value)}
+            id="heightFt"
           />
           <NumericalTextField
             unit="in"
             value={inches}
             onChange={(e) => setInches(e.target.value)}
+            id="heightIn"
           />
           <NumericalTextField
             unit="st"
             label="Weight"
             value={stones}
             onChange={(e) => setStones(e.target.value)}
+            id="weightSt"
           />
           <NumericalTextField
             unit="lbs"
             value={pounds}
             onChange={(e) => setPounds(e.target.value)}
+            id="weightLbs"
           />
         </div>
       )}

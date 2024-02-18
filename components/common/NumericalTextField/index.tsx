@@ -7,6 +7,7 @@ interface Props {
   unit: string
   value: string
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  id: string
 }
 
 const NumericalTextField: React.FC<Props> = ({
@@ -16,7 +17,10 @@ const NumericalTextField: React.FC<Props> = ({
 }) => {
   return (
     <div>
-      <Label className="text-sm font-normal leading-6 text-dark-electric-blue">
+      <Label
+        className="text-sm font-normal leading-6 text-dark-electric-blue"
+        htmlFor={props.id}
+      >
         {label}
       </Label>
       <div className="relative">
