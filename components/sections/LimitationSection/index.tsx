@@ -5,18 +5,18 @@ import CardWithSmallIcon from "../../common/CardWithSmallIcon"
 const LimitationSection = () => {
   return (
     <article className="relative p-6">
-      <div className="left-[8.75rem] top-[3rem] mb-[3.5rem] text-center lg:absolute lg:w-[35.25rem] lg:text-left">
-        <Heading level={1} size="l" className="mb-8">
-          Limitations of BMI
-        </Heading>
-        <Paragraph>
-          Although BMI is often a practical indicator of healthy weight, it is
-          not suited for every person. Specific groups should carefully consider
-          their BMI outcomes, and in certain cases, the measurement may not be
-          beneficial to use.
-        </Paragraph>
-      </div>
       <div className="mb-36 grid grid-cols-1 gap-4 sm:grid-cols-4 sm:gap-y-6 lg:grid-cols-12 lg:gap-8">
+        <div className="mb-[3.5rem] text-center sm:col-span-4 lg:col-span-5 lg:col-start-2 lg:text-left">
+          <Heading level={1} size="l" className="mb-8">
+            Limitations of BMI
+          </Heading>
+          <Paragraph>
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
+          </Paragraph>
+        </div>
         <CardWithSmallIcon
           title="Gender"
           description="The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."
