@@ -12,7 +12,7 @@ const ResultSection = () => {
         className="sm:-translate-x-16"
       />
       <div className="mt-12 flex flex-col gap-8 px-6 sm:pr-10 lg:gap-[2.5rem] lg:pl-20 lg:pr-0 lg:pt-[8rem]">
-        <Heading level={1} size="l" className="">
+        <Heading level={2} size="l" className="">
           What your BMI result means
         </Heading>
         <Paragraph>

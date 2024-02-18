@@ -89,6 +89,7 @@ const CalculatorCard = () => {
             id="metric"
             onClick={() => setUnit("metric")}
             checked={unit === "metric"}
+            aria-label="Metric system"
           />
           <Label htmlFor="metric">Metric</Label>
         </div>
@@ -98,6 +99,7 @@ const CalculatorCard = () => {
             id="imperial"
             onClick={() => setUnit("imperial")}
             checked={unit === "imperial"}
+            aria-label="Imperial system"
           />
           <Label htmlFor="imperial">Imperial</Label>
         </div>

@@ -7,7 +7,7 @@ const LimitationSection = () => {
     <article className="relative p-6">
       <div className="mb-36 grid grid-cols-1 gap-4 sm:grid-cols-4 sm:gap-y-6 lg:grid-cols-12 lg:gap-8">
         <div className="mb-[3.5rem] text-center sm:col-span-4 lg:col-span-5 lg:col-start-2 lg:text-left">
-          <Heading level={1} size="l" className="mb-8">
+          <Heading level={2} size="l" className="mb-8">
             Limitations of BMI
           </Heading>
           <Paragraph>
